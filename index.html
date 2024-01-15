@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-content-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Questionário sobre Higiene Urbana</h1>
+    <p id="description"><strong>Queremos saber o que pensa!</strong></p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" class="form-control">Freguesia
+          <input id="name" type="text" placeholder="onde está colocado" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="email-label" class="form-control">Email (opcional)
+          <input id="email" type="email" min="10" max="99" placeholder="Email para contato" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Idade</label>
+        <input id="number" name="number" type="number" min="12" max="77" placeholder="Idade">
+      </div>
+      <div class="form-group">
+        <p><b>Está satisfeito com a forma como as pessoas lidam com o lixo?</b></p>
+        <label>Grau de satisfação:</label>
+        <select id="dropdown" name="satisfacao" class="form-control" required>
+          <option value="satisfeito">Satisfeito</option>
+          <option value="insatisfeito">Insatisfeito</option>
+        </select>  
+      </div>
+      <div class="form-group">
+        <label>Como avalia a atuação dos utentes da freguesia?</label><br>
+        <input name="user-recommend" type="radio" value="excelente" class="input-radio" checked>
+        Excelente<br>
+        <input name="user-recommend" type="radio" value="uns_melhor_outros_nem_tanto" class="input-radio">
+        Uns melhor outros nem tanto<br>
+        <input name="user-recommend" type="radio" value="tem_de_melhorar" class="input-radio">
+        Tem de melhorar<br>
+      </div>
+      <div class="form-group">
+        <p>O que se pode/deve fazer para melhorar?<span class="clue">(Sem limite de escolhas)</span></p>
+        <label id="opiniao1">
+          <input name="prefer" value="educacao_criancas" type="checkbox" class="input-checkbox">
+          Educação das crianças
+        </label><br>
+        <label id="opiniao2">
+          <input name="prefer" value="educacao_adultos" type="checkbox" class="input-checkbox">
+          Educação dos adultos
+        </label><br>
+        <label id="opiniao3">
+          <input name="prefer" value="educacao_comercio" type="checkbox" class="input-checkbox">
+          Educação do comércio
+        </label><br>
+        <label id="opiniao4">
+          <input name="prefer" value="educacao_trabalhadores" type="checkbox" class="input-checkbox">
+          Educação dos trabalhadores
+        </label><br>
+        <label id="opiniao5">
+          <input name="prefer" value="fiscalizacao_privados" type="checkbox" class="input-checkbox">
+          Fiscalização de privados
+        </label><br>
+        <label id="opiniao6">
+          <input name="prefer" value="fiscalizacao_comercio" type="checkbox" class="input-checkbox">
+          Fiscalização do comércio
+        </label><br>
+        <label id="opiniao7">
+          <input name="prefer" value="fiscalizacao_trabalhadores" type="checkbox" class="input-checkbox">
+          Fiscalização dos trabalhadores
+        </label><br>
+      </div>            
+      <div class="form-group">
+        <label class="form-control">Deixe uma opinião, a sua perspectiva é importante...</label><br>
+        <textarea rows="4" cols="50" id="coment-input" name="comentario" placeholder="Escreva, pouco que seja..."></textarea>
+      </div>   
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div> 
+    </form>
+  </body>
+</html>
